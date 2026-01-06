@@ -1,0 +1,18 @@
+{
+    "files.autoSave": "afterDelay", // Автосохранение через
+    "files.autoSaveDelay": 1000, // 1 секунду
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit", // Исправить все возможные проблемы через ruff
+            "source.organizeImports.ruff": "explicit" // упорядочивание импортов через ruff
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff", // ФОрматировщик по умолчанию
+    },
+    "ruff.interpreter": [
+        "${workspaceFolder}/.venv/bin/python3.13"
+    ],
+    "ruff.path": [
+        "${workspaceFolder}/.venv/bin/ruff"
+    ],
+}
